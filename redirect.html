@@ -9,13 +9,8 @@
         const skypeParam = urlParams.get('skype');
 
         if (skypeParam) {
-            const skypeLink = `skype:${skypeParam}`;
+            const skypeLink = skype:${skypeParam};
             window.location.href = skypeLink;
-
-            // Attempt to close the tab after a small delay
-            setTimeout(() => {
-                window.close();
-            }, 1000); // Adjust delay as needed (1 second here)
         }
     </script>
 </head>
